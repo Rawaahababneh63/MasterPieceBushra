@@ -1,0 +1,423 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<!-- Mirrored from preview.colorlib.com/theme/capitalshop/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 04:32:23 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Shop | eCommers</title>
+<meta name="description" content>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/icon/favicon.png">
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/css/slicknav.css">
+<link rel="stylesheet" href="assets/css/flaticon.css">
+<link rel="stylesheet" href="assets/css/animate.min.css">
+<link rel="stylesheet" href="assets/css/price_rangs.css">
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="assets/css/themify-icons.css">
+<link rel="stylesheet" href="assets/css/slick.css">
+<link rel="stylesheet" href="assets/css/nice-select.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+    body{
+        background-image: url('Content/imges/background/login.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 180vh;
+    }
+    .checkbox-container {
+    display: flex;
+    align-items: center; /* لموازنة العناصر عمودياً */
+    direction: rtl; /* لجعل النصوص تتجه من اليمين لليسار */
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-left: 10px; /* لتوفير مسافة بين مربع الاختيار والنص */
+}
+
+
+.form-container img {
+            margin-bottom: 50px; /* زيادة المسافة بين الشعار والنص */
+        }
+        /* تعديل ارتفاع الحقول في الفورم */
+.form-control {
+    height: 50px; /* زيادة الارتفاع */
+    font-size: 1.2em; /* تكبير النص داخل الحقول */
+    text-align: right; /* محاذاة النص لليمين */
+}
+
+.form-container {
+    max-width: 1200px; /* زيادة عرض الفورم */
+    width: 100%;
+    min-height: 1000px; /* طول أكبر */
+    padding: 40px;
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: right; /* محتوى الفورم لليمين */
+    color: var(--bs-body-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* جعل الفورم أكثر وضوحًا في الأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .form-container {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-container {
+        padding: 15px;
+    }
+}
+
+/* إضافة مسافة بين الشعار والنص */
+.form-container img {
+    margin-bottom: 50px; /* زيادة المسافة بين الشعار والنص */
+}
+
+footer {
+    font-size: 1.2rem;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.main-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+            margin-right: 15%;
+        }
+
+        .form-container {
+            max-width: 1200px; /* زيادة عرض الفورم */
+            width: 100%;
+            min-height: 900px; /* طول أكبر */
+            padding: 40px;
+            border-radius: 1rem;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: right; /* محتوى الفورم لليمين */
+            color: var(--bs-body-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: right; /* المحاذاة إلى اليمين */
+        }
+
+        footer {
+            font-size: 1.2rem;
+            padding: 20px;
+            text-align: center;
+            color:white;
+            background-color: #000;
+        }
+
+        .btn {
+            width: 100%;
+        }
+
+        label {
+            display: inline-block;
+            font-size: calc(1rem + .3vw);
+            color: black;
+            margin-bottom: 8px;
+        }
+
+        .form-control {
+            text-align: right; /* الحقول لمحاذاة النص لليمين */
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(71, 137, 213, 0.25);
+            border-color: #71e5ff;
+        }
+
+        .form-outline input:hover {
+            border-color: #71e5ff;
+        }
+        /* //////////////////////// */
+/* أنماط النموذج المنبثق */
+#forgotPasswordModal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* خلفية مظلمة */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-area">
+            <!-- الجزء الأول (Header-Top) -->
+            <div class="header-top d-none d-sm-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                <div class="header-info-left">
+                                    <ul>
+                                       
+                                        <!-- <li><a href="#">الخصوصية</a></li> -->
+                                        <li><a href="#">الأسئلة الشائعة</a></li>
+                                        <li><a href="#">معلومات عنا</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-info-right d-flex">
+                                    <ul class="order-list">
+                                        <li><a href="#">قائمة أمنياتي</a></li>
+                                        <li><a href="#">تتبع الطلب</a></li>
+                                    </ul>
+                                    <ul class="header-social">
+                                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- الجزء الثاني (Header-Bottom) -->
+            <div class="header-bottom text-center">
+                <p dir="rtl" >تخفيضات تصل إلى 50%  أسرع ! العرض لفترة محدودة <a href="#" class="browse-btn" >تسوق الآن</a></p>
+            </div>
+        
+            <!-- الجزء الثالث (Header-Mid) -->
+      
+        </div>
+        </header>
+        
+  
+        <section class="main-content vh-80">
+            <div class="container py-5 h-100">
+                <div class="row d-flex align-items-center h-90">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="card-body p-4 p-lg-5 text-black form-container">
+                            <form action="/submit-login" method="post" id="form">
+                                <div class="text-center mb-3">
+                                    <img src="Content/imges/icons/logo4.png" alt="الشعار" style="width: 100px; height: auto;">
+                                </div>
+                                <div class="text-center mb-3">
+                                    <span class="h1 mb-0">!أهلاً بك مجدداً في عالمنا</span>
+                                </div>
+                                <h5 class="fw-normal mb-3 pb-3 text-center" style="letter-spacing: 1px;">سجل دخولك إلى حسابك</h5>
+    
+                                <hr />
+                                <!-- <div class="form-group">
+                                    <label for="username">اسم المستخدم</label>
+                                    <input type="text" id="username" name="Username" class="form-control" />
+                                    <div class="text-danger" id="email-error" style="color: rgb(175, 71, 71);"></div>
+                                </div> -->
+                                <div class="form-group">
+                                    <label for="EmailLogin">البريد الإلكتروني</label>
+                                    <input type="email" id="EmailLogin" name="Email" class="form-control" />
+                                    <div class="text-danger" id="email-error" style="color: rgb(175, 71, 71);"></div>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="PasswordLLogin">كلمة المرور</label>
+                                    <input type="password" id="PasswordLLogin" name="Password" class="form-control"  />
+                                    <div class="text-danger" id="password-error"  style="color:rgb(175, 71, 71);"></div>
+                                </div>
+    
+                                <br />
+                                <br />
+    
+                                <div class="form-group">
+                                    <button class="btn btn-dark btn-lg" type="submit"onclick="LoginUser(event)" style="background-color: rgb(5, 6, 8);">تسجيل الدخول</button>
+                                    <!-- <a  class="btn btn-dark btn-lg"  href="index.html">تسجبل الدخول</a> -->
+                                </div>
+                            </form>
+                            <br />
+                            <p class="small text-muted d-block text-center">
+                                <a href="OTPEmail.html"  class="text-muted" style="color: #393f81;">هل نسيت كلمة المرور؟</a>
+                            </p>
+                            <p class="mb-5 pb-lg-2 text-center" style="color: #393f81;">
+                                لا تمتلك حساباً؟ <a href="register.html" style="color: #393f81;">سجل هنا</a>
+                            </p>
+                            <a href="#!" class="small text-muted d-block text-center">شروط الاستخدام</a>
+                            <a href="#!" class="small text-muted d-block text-center">سياسة الخصوصية</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="forgotPasswordModal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>استعادة كلمة المرور</h2>
+                <p>أدخل بريدك الإلكتروني:</p>
+                <input type="email" id="forgotEmail" placeholder="البريد الإلكتروني" required>
+                <button id="sendOtpButton">إرسال OTP</button>
+            </div>
+        </div>
+
+        <script>
+            async function LoginUser(event) {     debugger
+                event.preventDefault(); // Prevent default form submission
+                debugger
+                
+                const email = document.getElementById("EmailLogin").value.trim();
+                const password = document.getElementById("PasswordLLogin").value.trim();
+            
+                // Check if the fields are empty
+                if (email === "" || password === "") {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Missing Fields",
+                        text: "Please fill in both email and password fields.",
+                    });
+                    return;
+                }
+            
+                const url = "https://localhost:44332/api/Users/Login";
+                const formData = new FormData(document.getElementById("form"));
+            
+                try {
+                    const token = localStorage.getItem("Token"); // Retrieve the token from localStorage
+            
+                    const response = await fetch(url, {
+                        method: "POST",
+                        headers: {
+                            "Authorization": `Bearer ${token}`, // Add the Authorization header
+                        },
+                        body: formData,
+                    });
+            
+                    const data = await response.json();
+                    debugger;
+            
+                    if (response.ok) {
+debugger
+                        if (email === "Admin63@store.com") {  
+                               localStorage.setItem("AdminId", data.adminId);
+                        localStorage.setItem("AdminToken", data.token);
+                    }
+
+                        else{
+                        localStorage.setItem("UserId", data.userId);
+                        localStorage.setItem("Token", data.token);  
+                   
+                        }
+                        // Check if the user is admin or regular user
+                        if (email === "Admin63@store.com") { // replace with your admin email
+                            window.location.href = "/Admin/index1.html"; // Redirect to admin dashboard
+                        } else if (email.endsWith("@gmail.com")) {
+                            window.location.href = "index.html"; // Redirect to user home page
+                        } else {
+                            alert("Login failed: Invalid email format.");
+                            return;
+                        }
+            
+                        // Handle cart items
+                        const cartItems = JSON.parse(localStorage.getItem("cartItems"));
+                        const userId = data.userId;
+            
+                        if (cartItems && cartItems.length > 0) {
+                            for (let item of cartItems) {
+                                debugger;
+                                const url22 = `https://localhost:44332/api/Cart/AddCartItem/${userId}`;
+                                const itemData = {
+                                    ProductId: item.product_id,
+                                    Quantity: item.quantity,
+                                };
+            
+                                await fetch(url22, {
+                                    method: "POST",
+                                    headers: {
+                                        "Content-Type": "application/json",
+                                    },
+                                    body: JSON.stringify(itemData),
+                                });
+                            }
+                        }
+            
+                        localStorage.removeItem("cartItems");
+                        alert("Login successful!");
+            
+                    } else {
+                        alert("Login failed: " + (data.message || "Invalid credentials"));
+                    }
+                } catch (error) {
+                    console.error("Error during login:", error);
+                    alert("An error occurred. Please try again.");
+                }
+            }
+            </script>
+           <!-- ////////////////////////////////////////////  -->
+            
+
+<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/jquery.slicknav.min.js"></script>
+
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.js"></script>
+<script src="assets/js/jquery.nice-select.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/price_rangs.js"></script>
+
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/jquery.form.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+<script src="assets/js/mail-script.js"></script>
+<script src="assets/js/jquery.ajaxchimp.min.js"></script>
+
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8c3e21517cb132ad","version":"2024.8.0","serverTiming":{"name":{"cfExtPri":true,"cfL4":true}},"token":"cd0b4b3a733644fc843ef0b185f98241","b":1}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from preview.colorlib.com/theme/capitalshop/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 04:32:23 GMT -->
+</html>

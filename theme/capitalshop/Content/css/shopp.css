@@ -1,0 +1,612 @@
+
+ 
+
+.product__item {
+    border: 1px solid #ddd; /* إطار حول الكارت */
+    border-radius: 5px; /* زوايا مستديرة */
+    overflow: hidden; /* إخفاء العناصر الزائدة */
+    margin-bottom: 20px; /* مسافة بين الكروت */
+    transition: box-shadow 0.3s ease; /* تأثير عند التمرير */
+}
+
+.product__item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* ظل عند التمرير */
+}
+
+.product__item__pic {
+    height: 200px; /* ارتفاع الصورة */
+    background-size: cover; /* ملء الخلفية */
+    background-position: center; /* وضع الصورة في الوسط */
+}
+
+.product__item__text {
+    padding: 15px; /* padding داخل الكارت */
+    text-align: center; /* محاذاة النص في المنتصف */
+}
+
+.rating {
+    margin: 10px 0; /* مسافة بين التقييم والنص */
+}
+
+.product__item__pic {
+    height: 200px; /* ارتفاع ثابت للصورة */
+    background-size: cover; /* ملء الخلفية بشكل كامل */
+    background-position: center; /* وضع الصورة في المركز */
+    display: flex; /* استخدام flexbox لجعل المحتوى في المنتصف */
+    align-items: center; /* محاذاة العمودي */
+    justify-content: center; /* محاذاة الأفقي */
+}
+.content1{
+   
+   color: #ff2020;
+   margin-bottom: 12px;
+   font-family: 'Cairo';
+   animation-delay: 0.2s;
+   width: 159%;
+   position: relative;
+   right: 8pc;
+}
+.mdi {
+           font-size: 50px;
+       }
+
+       .padding {
+           padding: 8rem !important;
+       }
+
+       /* تنسيق الزر داخل النافذة */
+       .btn-outline-light {
+           border-radius: 50px;
+           width: 100%;
+       }
+        /* إضافة المسافات حول الفورم */
+        .modal-body {
+
+           padding:3rem; /* يمكنك تعديل المسافة كما تريد */
+       }
+       /* التوعية */
+       * before footer section  */
+.container-custom {
+   background-color: #f8f9fa; /* لون رمادي فاتح */
+   padding: 2rem;
+   border-radius: 8px;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+  .container-custom {
+           background-color: #f8f9fa; /* لون رمادي فاتح */
+           padding: 2rem;
+           border-radius: 8px;
+           width: 100%;
+           box-sizing: border-box;
+       }
+
+       .section-header4 {
+           font-size: 3rem;
+           font-weight: bold;
+           margin-bottom: 2rem;
+           text-align: center;
+       }
+       .section-header {
+           font-size: .9rem;
+           font-weight: bold;
+           margin-bottom: 2rem;
+           text-align: center;
+       }
+
+       .content4 h3 {
+           font-size: 1.25rem;
+           margin-bottom: 1rem;
+           font-weight: bold;
+       }
+
+       .content4 p {
+           color: #6c757d;
+           font-size: 1rem;
+       }
+
+       .btn-custom4:hover {
+           background-color: #000;
+           color: #fff;
+       }
+
+       .icon4 {
+           font-size: 2.5rem;
+           color: #30D5C8;
+           margin-bottom: 1rem;
+       }
+
+       button.btn.btn-custom4.btn-lg {
+           position: relative;
+           left: 43%;
+           border: 1px solid black;
+           font-size: 18px;
+           font-weight: 400;
+       }
+/* ضبط الألوان */
+.product__item__text h6,
+.product__item__text .add-cart,
+.product__item__text h5 {
+   color: #000; /* تغيير لون النص إلى الأسود */
+}
+
+/* ضبط لون الخلفية */
+.product__item__pic {
+   background-color: #f7f7f7; /* خلفية رمادية فاتحة للمنتج */
+}
+
+/* تحسين الصورة والخلفية */
+.product__item__pic {
+   background-size: cover;
+   background-position: center;
+   height: 350px; /* يمكنك تعديل الارتفاع إذا لزم الأمر */
+}
+
+/* تحسين النصوص */
+.product__item__text .rating i {
+   color: #FFD700; /* لون النجوم الذهبي */
+}
+/* ضبط منتجات الصورة */
+/*---------------------
+ Product
+-----------------------*/
+
+.product {
+   padding-top: 0;
+   padding-bottom: 60px;
+}
+
+.filter__controls {
+   text-align: center;
+   margin-bottom: 45px;
+}
+
+.filter__controls li {
+   color: #b7b7b7;
+   font-size: 24px;
+   font-weight: 700;
+   list-style: none;
+   display: inline-block;
+   margin-right: 88px;
+   cursor: pointer;
+}
+
+.filter__controls li:last-child {
+   margin-right: 0;
+}
+
+.filter__controls li.active {
+   color: #111111;
+}
+
+.product__item {
+   overflow: hidden;
+   margin-bottom: 40px;
+}
+
+.product__item.sale .product__item__pic .label {
+   color: #ffffff;
+   background: #111111;
+}
+
+.product__item.sale .product__item__text .rating i {
+   color: #f7941d;
+}
+
+.product__item.sale .product__item__text .rating i:nth-last-child(1) {
+   color: #b7b7b7;
+}
+
+.product__item:hover .product__item__pic .product__hover {
+   right: 20px;
+   opacity: 1;
+}
+
+.product__item:hover .product__item__text a {
+   top: 22px;
+   opacity: 1;
+   visibility: visible;
+}
+
+.product__item:hover .product__item__text h6 {
+   opacity: 0;
+}
+
+.product__item:hover .product__item__text .product__color__select {
+   opacity: 1;
+}
+
+.product__item__pic {
+   height: 260px;
+   position: relative;
+   background-position: center center;
+}
+
+.product__item__pic .label {
+   color: #111111;
+   font-size: 11px;
+   font-weight: 700;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   display: inline-block;
+   padding: 4px 15px 2px;
+   background: #ffffff;
+   position: absolute;
+   left: 0;
+   top: 20px;
+}
+
+.product__item__pic .product__hover {
+   position: absolute;
+   right: -200px;
+   top: 20px;
+   -webkit-transition: all, 0.8s;
+   -o-transition: all, 0.8s;
+   transition: all, 0.8s;
+}
+
+.product__item__pic .product__hover li {
+   list-style: none;
+   margin-bottom: 10px;
+   position: relative;
+}
+
+.product__item__pic .product__hover li:hover span {
+   opacity: 1;
+   visibility: visible;
+}
+
+.product__item__pic .product__hover li span {
+   color: #ffffff;
+   background: #111111;
+   display: inline-block;
+   padding: 4px 10px;
+   font-size: 12px;
+   position: absolute;
+   left: -78px;
+   top: 5px;
+   z-index: 1;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: all, 0.3s;
+   -o-transition: all, 0.3s;
+   transition: all, 0.3s;
+}
+
+.product__item__pic .product__hover li span:after {
+   position: absolute;
+   right: -2px;
+   top: 5px;
+   height: 15px;
+   width: 15px;
+   background: #111111;
+   content: "";
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);
+   z-index: -1;
+}
+
+.product__item__pic .product__hover li img {
+   background: #ffffff;
+   padding: 10px;
+   display: inline-block;
+}
+
+.product__item__text {
+   padding-top: 25px;
+   position: relative;
+}
+
+.product__item__text a {
+   font-size: 15px;
+   color: #e53637;
+   font-weight: 700;
+   position: absolute;
+   left: 0;
+   top: 0;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: all, 0.3s;
+   -o-transition: all, 0.3s;
+   transition: all, 0.3s;
+}
+
+.product__item__text h6 {
+   color: #111111;
+   font-size: 15px;
+   font-weight: 600;
+   margin-bottom: 5px;
+   -webkit-transition: all, 0.3s;
+   -o-transition: all, 0.3s;
+   transition: all, 0.3s;
+}
+
+.product__item__text .rating {
+   margin-bottom: 6px;
+}
+
+.product__item__text .rating i {
+   font-size: 14px;
+   color: #b7b7b7;
+   margin-right: -5px;
+}
+
+.product__item__text h5 {
+   color: #0d0d0d;
+   font-weight: 700;
+}
+
+.product__item__text .product__color__select {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   opacity: 0;
+   -webkit-transition: all, 0.5s;
+   -o-transition: all, 0.5s;
+   transition: all, 0.5s;
+}
+
+.product__item__text .product__color__select label {
+   display: inline-block;
+   height: 12px;
+   width: 12px;
+   background: #919191;
+   border-radius: 50%;
+   margin-bottom: 0;
+   margin-right: 5px;
+   position: relative;
+   cursor: pointer;
+}
+
+.product__item__text .product__color__select label.black {
+   background: #404a47;
+}
+
+.product__item__text .product__color__select label.grey {
+   background: #d5a667;
+}
+
+.product__item__text .product__color__select label.active:after {
+   opacity: 1;
+}
+
+.product__item__text .product__color__select label:after {
+   position: absolute;
+   left: -3px;
+   top: -3px;
+   height: 18px;
+   width: 18px;
+   border: 1px solid #b9b9b9;
+   content: "";
+   border-radius: 50%;
+   opacity: 0;
+}
+
+.product__item__text .product__color__select label input {
+   position: absolute;
+   visibility: hidden;
+}
+.add-cart{
+   font-size: 15px;
+   color: #e53637;
+   font-weight: 700;
+   position: absolute;
+   left: 0;
+   top: 0;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: all, 0.3s;
+   -o-transition: all, 0.3s;
+   transition: all, 0.3s;
+}
+.latest-items {
+   padding-top: 95px;
+   padding-bottom: 100px;
+   text-align: center;
+}
+/* تنسيق البراند */
+.widget_list {
+    text-align: right; /* محاذاة النص إلى اليمين */
+}
+
+.widget_list h3 {
+    margin-bottom: 10px; /* إضافة مسافة أسفل العنوان */
+    font-size: 1.5rem; /* حجم خط العنوان */
+    font-weight: bold; /* جعل العنوان بخط عريض */
+}
+
+.widget_list ul {
+    list-style: none; /* إزالة العلامات النقطية */
+    padding: 0; /* إزالة الحشو */
+    margin: 0; /* إزالة الهوامش */
+}
+
+.widget_list li {
+    margin-bottom: 8px; /* إضافة مسافة بين العناصر */
+}
+
+.widget_list li a {
+    text-decoration: none; /* إزالة الخط السفلي */
+    color: #333; /* لون النص */
+    transition: color 0.3s; /* تأثير عند تغيير اللون */
+}
+
+.widget_list li a:hover {
+    color: #000000; /* تغيير لون النص عند التمرير */
+}
+#products-container.grid-3 .product {
+    width: 33.33%; /* عرض 3 عناصر في الصف */
+}
+
+#products-container.grid-4 .product {
+    width: 25%; /* عرض 4 عناصر في الصف */
+}
+
+#products-container.list .product {
+    width: 100%; /* عرض عنصر واحد في الصف */
+}
+/* تنسيق زر الاوان */
+/* تنسيق الزر */
+/* تنسيق القائمة المنسدلة */
+#colorFilter {
+    width: 100%; /* يجعل الزر بعرض كامل الحاوية */
+    padding: 10px; /* مساحة داخلية للزر */
+    font-size: 16px; /* حجم خط أكبر */
+
+    border-radius: 5px; /* زوايا دائرية */
+    background-color: #fff; /* لون خلفية الزر */
+    color: #333; /* لون النص */
+    cursor: pointer; /* يغير شكل المؤشر عند المرور فوق الزر */
+    transition: background-color 0.3s ease; /* تأثير انتقال عند تغيير اللون */
+}
+
+/* تحسين مظهر الخيارات */
+#colorFilter option {
+    padding: 10px; /* مساحة داخلية للخيار */
+}
+/* فلترة البراند  */
+
+/* تنسيق الزر */
+.dropdown .dropbtn {
+    background-color: #000000; /* لون خلفية الزر */
+    color: white; /* لون النص */
+    padding: 10px; /* حشوة الزر */
+    font-size: 16px; /* حجم الخط */
+    border: none; /* إزالة الحدود */
+    cursor: pointer; /* تغيير المؤشر عند التحويم */
+    width: 100%; /* عرض 100% */
+    text-align: right; /* محاذاة النص لليمين */
+}
+
+/* قائمة العناصر المنسدلة */
+.dropdown-content {
+    display: none; /* إخفاء القائمة افتراضيًا */
+    position: absolute; /* جعلها مطابقة للمحتوى */
+    background-color: #f9f9f9; /* لون الخلفية */
+    min-width: 200px; /* عرض الحد الأدنى */
+  
+    z-index: 1; /* ترتيب العناصر */
+    list-style-type: none; /* إزالة النقاط */
+    padding: 0; /* إزالة الحشوات */
+    margin: 0; /* إزالة الهوامش */
+}
+
+/* تنسيق عناصر القائمة */
+.dropdown-content a {
+    color: black; /* لون النص */
+    padding: 12px 16px; /* حشوة */
+    text-decoration: none; /* إزالة التسطير */
+    display: block; /* جعل كل عنصر في صف */
+    text-align: right; /* محاذاة النص لليمين */
+}
+
+/* تغيير لون الخلفية عند التحويم */
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* لون خلفية عند التحويم */
+}
+
+/* إظهار القائمة عند النقر */
+.dropdown:hover .dropdown-content {
+    display: block; /* إظهار القائمة عند التحويم على الزر */
+}
+/* فلترة السعر  */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* يسمح بتوزيع العناصر في عدة أسطر */
+}
+
+.single_product {
+    flex: 1 1 30%; /* يحدد عرض الكاردات */
+    margin: 10px; /* مسافة بين الكاردات */
+}
+
+.product_thumb {
+    position: relative; /* لضمان وضع العلامات بشكل صحيح */
+}
+
+.label_product {
+    position: absolute; /* لتحديد مكان العلامات */
+    top: 10px;
+    left: 10px;
+}
+
+/* للكود الاضافة لسلة والبرودكت ديتالز */
+/* .add_to_cart {
+    display: flex; */
+    /* justify-content: space-between; توزيع الأزرار بشكل متساوٍ */
+    /* margin-top: 10px; مسافة بين السعر والأزرار */
+/* } */
+
+.add_to_cart {
+    margin-top: 10%; /* تباعد أعلى للأزرار */
+}
+
+.product_content {
+    padding-bottom: 20px; /* إضافة مساحة أسفل المحتوى */
+}
+.btn-quick-view {
+    display: inline-block; /* تأكد من أن الزر يظهر كعنصر كتلي */
+    padding: 10px 15px; /* مساحة داخلية */
+    background-color: #909090; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    border-radius: 5px; /* زوايا دائرية */
+    text-decoration: none; /* إزالة خط تحت الرابط */
+    transition: background-color 0.3s; /* تأثير سلس عند التمرير */
+}
+
+.btn-quick-view:hover {
+    background-color: #757575; /* لون خلفية عند التمرير */
+}
+.container {
+    position: relative;
+    left: 8%;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: #fff;
+    width: 15px;
+    height: 15px;
+    top: -7px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 0px solid #F53737;
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1340px;
+    }
+}
+body{  overflow-x: hidden !important;}
+.ui-slider-horizontal .ui-slider-range {
+    background: #F53737;
+    height: 0px;
+}
+
+#colorFilter {
+    text-align: right;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #0c110c;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* شريط فلترة لاسعر */
+.noUi-connect {
+    background: #3FB8AF!important;
+}
+.label_sale {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+    position: absolute; /* أو استخدم position: relative حسب تصميمك */
+    top: 5px;
+ left: 140px;
+    background-color: yellow;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
